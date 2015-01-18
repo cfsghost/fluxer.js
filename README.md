@@ -70,14 +70,14 @@ var ShoppingApp = React.createClass({
   getInitialState: function() {
     // preparing state to initialize component
     return {
-      carts: store.getAll();
+      carts: cartStore.getAll();
     };
   },
   componentDidMount: function() {
-    store.on('change', this._onChange);
+    cartStore.on('change', this._onChange);
   },
   componentWillUnmount: function() {
-    store.removeListener('change', this._onChange);
+    cartStore.removeListener('change', this._onChange);
   },
   render: function() {
     // Template for React
@@ -85,7 +85,7 @@ var ShoppingApp = React.createClass({
   _onChange: function() {
       // Updating state
       this.setState({
-        carts: store.getAll();
+        carts: cartStore.getAll();
       });
   },
   _onCreate: function(ProductId) {
@@ -109,9 +109,9 @@ var cartActions = Fluxer.createActions('ShoppingCart', [
 // We can listen to Fluxer for "ShoppingCart.Unselect" and "ShoppingCart.Select"
 cartActions.toggleSelect = function(product) {
   if (product.selected)
-    this.$emit('Unselect');
+    this.$emit('Unselect', product.id);
   else
-    this.$emit('Select');
+    this.$emit('Select', product.id);
 };
 
 Fluxer.on('ShoppingCart.Select', function() {
