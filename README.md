@@ -21,7 +21,7 @@ But now, writing a Flux application is quite easy with fluxer.js framework, just
 
 Here is a simple code to show how to write a Flux application with fluxer.js:
 ```js
-var Fluxer = require('fluxer');
+var Fluxer = require('fluxerjs');
 var React = require('react');
 
 // Creating Actions with a given name
