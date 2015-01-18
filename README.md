@@ -11,6 +11,8 @@ Install fluxer.js via NPM:
 npm install fluxer
 ```
 
+Note that fluxer.js using `require` and `EventEmitter` of Node.js, you must have browserify to make it work for front-end. purpose.
+
 ### Usage
 
 In the past, Lack of framework for Flux pattern. if we want to use Flux, we must know exactly parts: the ___dispatcher___, the ___actions___, the ___stores___, and the ___views___. With `flux` NPM Module which is provided by Facebook, rough implementation is not easy to use.
