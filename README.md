@@ -97,7 +97,7 @@ var ShoppingApp = React.createClass({
 
 ### Actions Customization
 
-By default, actions will fire the event with the action name of itself, but it should be able to fire one or more events in one triggered action rather than one-to-one relationship. In fluxer.js, it is possible to customize actions for triggering specific store in runtime. Just replacing action handler for this purpose, then you can use `this.$emit` to fire the event what you want instead of origin.
+By default, actions will fire the event with the action name of itself, but it should be able to fire more events in one triggered action rather than one-to-one relationship. In fluxer.js, it is possible to customize actions for triggering specific store in runtime. Just replacing action handler for this purpose, then you can use `this.$emit` to fire the event what you want instead of origin.
 
 Here is an example:
 ```js
