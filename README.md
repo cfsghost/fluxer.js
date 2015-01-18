@@ -107,7 +107,7 @@ var cartActions = Fluxer.createActions('ShoppingCart', [
 ]);
 
 // We can listen to Fluxer for "ShoppingCart.Unselect" and "ShoppingCart.Select"
-actions.toggleSelect = function(product) {
+cartActions.toggleSelect = function(product) {
   if (product.selected)
     this.$emit('Unselect');
   else
