@@ -1,5 +1,5 @@
 {
-  "name": "fluxer",
+  "name": "fluxerjs",
   "version": "0.0.1",
   "description": "Powerful front-end framework for Flux",
   "main": "./lib/fluxer.js",
