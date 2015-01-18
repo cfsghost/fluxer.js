@@ -1,4 +1,4 @@
-var Fluxer = require('fluxer');
+var Fluxer = require('fluxerjs');
 
 var _todos = {};
 
