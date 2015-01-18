@@ -1,6 +1,6 @@
 {
   "name": "fluxerjs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Powerful front-end framework for Flux",
   "main": "./lib/fluxer.js",
   "scripts": {
