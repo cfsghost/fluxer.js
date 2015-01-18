@@ -13,7 +13,7 @@ npm install fluxerjs
 
 Note that fluxer.js using `require` and `EventEmitter` of Node.js, you must have browserify to make it work for front-end. purpose.
 
-### Usage
+## Usage
 
 In the past, Lack of framework for Flux pattern. if we want to use Flux, we must know exactly parts: the ___dispatcher___, the ___actions___, the ___stores___, and the ___views___. With `flux` NPM Module which is provided by Facebook, rough implementation is not easy to use.
 
@@ -38,6 +38,7 @@ cartStore.getAll = function() {
   return _items;
 };
 
+// When received action event, process the request
 Fluxer.on('ShoppingCart.Create', function(productId) {
   // Adding product to shopping cart via Restful API
   $.post('/apis/cart', { id: productId }, function(data) {
@@ -49,6 +50,8 @@ Fluxer.on('ShoppingCart.Create', function(productId) {
     this.emit('change');
   });
 });
+
+// When received action event, process the request
 Fluxer.on('ShoppingCart.Delete', function(productId) {
 
   // Remove product from shopping cart via Restful API
@@ -115,7 +118,7 @@ actions.toggleSelect = function(product) {
 
 ## Demo
 
-Just like other front-end framework, fluxer.js has an TodoMVC example for demostration.
+Just like other front-end framework, fluxer.js has an TodoMVC example for demostration as well.
 
 Change working directory then initializing and starting it with NPM command:
 ```
