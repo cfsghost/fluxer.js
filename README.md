@@ -8,7 +8,7 @@ Powerful front-end framework for Flux unidirectional data flow. Flux is announce
 
 Install fluxer.js via NPM:
 ```
-npm install fluxer
+npm install fluxerjs
 ```
 
 Note that fluxer.js using `require` and `EventEmitter` of Node.js, you must have browserify to make it work for front-end. purpose.
