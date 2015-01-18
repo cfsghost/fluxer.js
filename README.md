@@ -2,7 +2,7 @@
 
 Powerful front-end framework for Flux unidirectional data flow. Flux is announced by Facebook, which is next generation design pattern for front-end development.
 
-[![NPM](https://nodei.co/npm/fluxer.png)](https://nodei.co/npm/fluxer/)
+[![NPM](https://nodei.co/npm/fluxerjs.png)](https://nodei.co/npm/fluxerjs/)
 
 ## Installation
 
