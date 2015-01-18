@@ -1,0 +1,24 @@
+{
+  "name": "fluxer",
+  "version": "0.0.1",
+  "description": "Powerful front-end framework for Flux",
+  "main": "./lib/fluxer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cfsghost/fluxer.js.git"
+  },
+  "keywords": [
+    "web",
+    "framework",
+    "flux"
+  ],
+  "author": "Fred Chien <cfsghost@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfsghost/fluxer.js/issues"
+  },
+  "homepage": "https://github.com/cfsghost/fluxer.js"
+}
