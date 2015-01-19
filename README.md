@@ -47,7 +47,7 @@ Fluxer.on('ShoppingCart.Create', function(productId) {
     _items[productId] = data;
     
     // Notify react components (view) that requires updating
-    this.emit('change');
+    cartStore.emit('change');
   });
 });
 
@@ -60,7 +60,7 @@ Fluxer.on('ShoppingCart.Delete', function(productId) {
     delete _items[productId];
   
     // Notify react components (view) that requires updating
-    this.emit('change');
+    cartStore.emit('change');
   });
   
 });
